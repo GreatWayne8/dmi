@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Our Team - Defenders Ministry International</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/png" href="images/logo.png" />
+  
+  <style>
+    :root {
+      --primary-purple: #5e4b8b;
+      --black: #000;
+      --white: #fff;
+      --light-gray: #f8f8f8;
+      --dark-gray: #222;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--black);
+      color: var(--white);
+      line-height: 1.6;
+    }
+    a { text-decoration: none; color: inherit; }
+
+    header {
+      background: var(--black);
+      color: var(--white);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 50px;
+      flex-wrap: wrap;
+    }
+    .logo {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+      font-weight: 700;
+      font-size: 1.2rem;
+      text-transform: uppercase;
+      line-height: 1.2;
+    }
+    .nav-center a {
+      margin: 0 15px;
+      font-weight: 500;
+      color: var(--white);
+    }
+    .donate-btn {
+      background: var(--primary-purple);
+      color: white;
+      padding: 10px 20px;
+      border-radius: 5px;
+      font-weight: 600;
+    }
+
+    .team-container {
+      max-width: 1300px;
+      margin: auto;
+      padding: 80px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 40px;
+    }
+
+    .team-card {
+      text-align: center;
+      padding: 20px;
+    }
+    .team-card img {
+      width: 250px;
+      height: 250px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid white;
+    }
+    .team-name {
+      margin-top: 20px;
+      font-size: 22px;
+      font-weight: 600;
+    }
+    .team-title {
+      margin: 10px 0;
+      text-transform: uppercase;
+      font-weight: 600;
+      font-size: 14px;
+    }
+    .team-bio {
+      text-align: left;
+      font-size: 15px;
+      color: #ccc;
+    }
+
+    footer {
+      background: var(--black);
+      color: white;
+      padding: 60px 20px;
+      width: 100%;
+    }
+    .footer-columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 40px;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: auto;
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="images/logo.png" alt="Defenders Ministry Logo" style="height: 60px;">
+    <div>DEFENDERS <br> MINISTRY INTERNATIONAL</div>
+  </div>
+
+  <div class="nav-center">
+    <a href="index.html">Home</a>
+    <a href="about.html">About Us</a>
+    <a href="our-team.html">Our Team</a>
+    <a href="programs.html">Our Programs</a>
+    <a href="#">Events</a>
+    <a href="#">Visit Us</a>
+  </div>
+
+  <a href="#" class="donate-btn">DONATE</a>
+</header>
+
+<!-- TEAM MEMBERS -->
+<div class="team-container">
+
+  <div class="team-card">
+    <img src="images/pastor1.jpg" alt="Team Member 1">
+    <div class="team-name">Apostle Ben Achebe </div>
+    <div class="team-title">LEAD PASTOR</div>
+    <div class="team-bio">
+      <p>Ben Achebe holds a Master of Divinity from ## Seminary and has been passionately leading Defenders Ministry for over 10 years. He is dedicated to raising bold disciples and impacting nations through the gospel.</p>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <img src="images/pastor2.jpg" alt="Team Member 2">
+    <div class="team-name">Pastor Winnie Achebe</div>
+    <div class="team-title"> PASTOR</div>
+    <div class="team-bio">
+      <p>Wiinie leads Bible Studies and Discipleship Training, equipping believers for ministry. She loves mentoring young women and organizing community outreach programs.</p>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <img src="images/pastor3.jpg" alt="Team Member 3">
+    <div class="team-name">James Brown</div>
+    <div class="team-title">WORSHIP DIRECTOR</div>
+    <div class="team-bio">
+      <p>James is a gifted musician who leads powerful worship experiences, drawing people closer to God through music. He oversees worship team training and music ministry development.</p>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <img src="images/pastor4.jpg" alt="Team Member 4">
+    <div class="team-name">Sarah Johnson</div>
+    <div class="team-title">CHILDREN MINISTRY DIRECTOR</div>
+    <div class="team-bio">
+      <p>Sarah oversees children's ministry, curriculum planning, and volunteers. Her passion is helping children grow in faith and understand the Word of God from a young age.</p>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <img src="images/pastor5.jpg" alt="Team Member 5">
+    <div class="team-name">David Lee</div>
+    <div class="team-title">MEDIA DIRECTOR</div>
+    <div class="team-bio">
+      <p>David manages media production, livestream services, and digital outreach. His creativity helps extend the ministry's reach across multiple platforms.</p>
+    </div>
+  </div>
+
+  <div class="team-card">
+    <img src="images/pastor6.jpg" alt="Team Member 6">
+    <div class="team-name">Rachel Kim</div>
+    <div class="team-title">MISSIONS COORDINATOR</div>
+    <div class="team-bio">
+      <p>Rachel coordinates local and international mission trips, mobilizing teams to bring hope and support to communities worldwide, fulfilling the Great Commission.</p>
+    </div>
+  </div>
+
+</div>
+
+<!-- FOOTER -->
+<footer>
+  <div class="footer-columns">
+    <div>
+      <h3>Contact</h3>
+      <p>info@defendersministry.org<br>(+123) 456 789 000</p>
+      <p>123 Kingdom Avenue<br>Your City, Country</p>
+    </div>
+    <div>
+      <h3>Programs</h3>
+      <p>Prayer Services<br>Bible Study<br>Youth Ministry<br>Community Outreach</p>
+    </div>
+    <div>
+      <h3>Media</h3>
+      <p>Videos<br>Teachings<br>Sermons</p>
+    </div>
+    <div>
+      <h3>Other</h3>
+      <p>Give Online<br>Volunteer<br>Submit Prayer Request</p>
+    </div>
+  </div>
+  <p style="text-align:center; margin-top:30px;">&copy; 2025 Defenders Ministry International</p>
+</footer>
+
+</body>
+</html>
