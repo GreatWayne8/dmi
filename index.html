@@ -73,31 +73,34 @@
         }
 
         /* Hero */
-        .hero {
-            background: url('https://via.placeholder.com/1920x1000') no-repeat center center/cover;
-            height: 100vh;
-            position: relative;
-            color: white;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            text-align: center;
-            width: 100%;
-        }
+.hero {
+  position: relative;
+  background: url('images/hero-bg.jpg') no-repeat center center/cover;
+  padding: 160px 0; /* Adjust top and bottom padding for spacing */
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+}
 
-        .hero::after {
-            content: "";
-            position: absolute;
-            inset: 0;
-            background: rgba(0, 0, 0, 0.5);
-        }
+.hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(1, 36, 134, 0.4); /* translucent overlay */
+  z-index: 0;
+}
 
-        .hero-content {
-            position: relative;
-            z-index: 1;
-            max-width: 1000px;
-            padding: 0 20px;
-        }
+.hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 1000px;
+  padding: 0 20px;
+}
+
+
 
         .hero h1 {
             font-size: 50px;
@@ -251,151 +254,151 @@
 <body>
 
     <!-- Navbar -->
-<header>
-  <div class="logo">
-    <img src="images/logo.png" alt="Defenders Ministry Logo" style="height: 60px;">
-    <div>
-      DEFENDERS <br> MINISTRY INTERNATIONAL
-    </div>
-  </div>
-
-  <div class="nav-center">
-  <a href="index.html">Home</a>
-  <a href="about.html">About Us</a>
-    <a href="our-team.html">Our Team</a>
-    <a href="programs.html">Our Programs</a>
-    <a href="#">Events</a>
-    <a href="#">Visit Us</a>
-  </div>
-
-  <a href="#" class="donate-btn">DONATE</a>
-</header>
-
-        <!-- Hero -->
-        <section class="hero">
-            <div class="hero-content">
-                <h1>Today's church for modern families.</h1>
-                <p>Come experience the joy of belonging to a faith community that values community, worship, and
-                    purpose.</p>
+    <header>
+        <div class="logo">
+            <img src="images/logo.png" alt="Defenders Ministry Logo" style="height: 60px;">
+            <div>
+                DEFENDERS <br> MINISTRY INTERNATIONAL
             </div>
-        </section>
+        </div>
 
-        <!-- About -->
-        <section>
-            <div class="section-container about">
-                <div class="about-text">
-                    <h2>We Are Cornerstone Church</h2>
-                    <p>Welcome to Cornerstone Church, where we live intentionally to share His love and create lasting
-                        memories that connect people to Christ.
-                        We are a local church in St. Paul, Minnesota and we are on a mission to see God’s purpose in our
-                        lives. Come for an inspiring worship and hear God’s word and worship with Cornerstone’s Worship
-                        Team.</p>
-                </div>
-                <div class="about-video">
-                    <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sermon Video"
-                        allowfullscreen></iframe>
-                </div>
+        <div class="nav-center">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="our-team.html">Our Team</a>
+            <a href="programs.html">Our Programs</a>
+            <a href="#">Events</a>
+            <a href="#">Visit Us</a>
+        </div>
+
+        <a href="#" class="donate-btn">DONATE</a>
+    </header>
+
+    <!-- Hero -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Today's church for modern families.</h1>
+            <p>Come experience the joy of belonging to a faith community that values community, worship, and
+                purpose.</p>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section>
+        <div class="section-container about">
+            <div class="about-text">
+                <h2>We Are Defenders MinistryInt'l Church</h2>
+                <p>Welcome to Defenders MinistryInt'l Church, where we live intentionally to share His love and create lasting
+                    memories that connect people to Christ.
+                    We are a local church in St. Paul, Minnesota and we are on a mission to see God’s purpose in our
+                    lives. Come for an inspiring worship and hear God’s word and worship with Defenders MinistryInt'l’s Worship
+                    Team.</p>
             </div>
-        </section>
-
-        <!-- Service Times -->
-        <section class="service-time">
-            <h2>Sundays at 10:30 AM</h2>
-            <p>Online or In-Person</p>
-        </section>
-
-        <!-- Visit Us -->
-        <section>
-            <div class="section-container">
-                <h2>Visit Us</h2>
-                <div class="visit-us">
-                    <div class="visit-col">
-                        <h3>10:30 - 11:30 A.M. Worship Service</h3>
-                        <p>Cornerstone Worship Center</p>
-                        <p>674 Johnson Parkway, St. Paul, MN 55106</p>
-                    </div>
-                    <div class="visit-col">
-                        <p><b>Parking on-site:</b> Includes grass area.</p>
-                        <p><b>Kids Church:</b> Recharge knowing your children are in caring hands.</p>
-                        <p><b>Complimentary coffee + donuts!</b> Warm welcoming tradition before or after service.</p>
-                    </div>
-                </div>
+            <div class="about-video">
+                <iframe src="https://www.youtube.com/embed/mNQu9SCYCGo" title="Sermon Video" allowfullscreen></iframe>
             </div>
-        </section>
 
-        <!-- Our Values -->
-        <section class="values">
-            <h2>Our Values</h2>
-            <div class="values-cards">
-                <div class="card">
-                    <img src="https://via.placeholder.com/320x200" alt="Worship">
-                    <h3>Worship</h3>
-                    <p>We believe in lifting our voices and hearts to God, celebrating His goodness and encountering His
-                        presence.</p>
+        </div>
+    </section>
+
+    <!-- Service Times -->
+    <section class="service-time">
+        <h2>Sundays at 9:00 AM</h2>
+        <p>Online or In-Person</p>
+    </section>
+
+    <!-- Visit Us -->
+    <section>
+        <div class="section-container">
+            <h2>Visit Us</h2>
+            <div class="visit-us">
+                <div class="visit-col">
+                    <h3>9:00 - 1:00 A.M. Worship Service</h3>
+                    <p>Mutaratara Mall River Road</p>
+                    <p>Fifth Floor</p>
                 </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/320x200" alt="JOY">
-                    <h3>J.O.Y.</h3>
-                    <p>Jesus, Others, You. Prioritizing Jesus above all and caring for others, empowering us to better
-                        serve our community.</p>
-                </div>
-                <div class="card">
-                    <img src="https://via.placeholder.com/320x200" alt="Being Sent">
-                    <h3>Being Sent</h3>
-                    <p>Engaging with local and global communities, sharing hope and love through actions and words.</p>
+                <div class="visit-col">
+                    <p><b>Parking on-site:</b> </p>
+                    <p><b>Kids Church:</b> Recharge knowing your children are in caring hands.</p>
+                    <p><b>Complimentary coffee + donuts!</b> Warm welcoming tradition before or after service.</p>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Events -->
-        <section class="events">
-            <h2>Upcoming Events</h2>
-            <p>See all events</p>
-        </section>
-
-        <!-- Sermon -->
-        <section class="sermon">
-            <h2>Our Latest Service</h2>
-            <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sermon"></iframe>
-        </section>
-
-        <!-- CTA -->
-        <section class="cta">
-            <h2>Join a Life Group</h2>
-            <p>Our programs serve as the hub for small-group fellowship and discipleship.</p>
-            <a href="#" class="donate-btn">View All Programs</a>
-        </section>
-
-        <!-- Newsletter -->
-        <section class="newsletter">
-            <h2>Subscribe to our weekly newsletter</h2>
-            <input type="email" placeholder="Email Address">
-            <button>Sign Up</button>
-        </section>
-
-        <!-- Footer -->
-        <footer>
-            <div class="footer-columns">
-                <div>
-                    <h3>Contact</h3>
-                    <p>cornerstone@cllc.church<br>(952) 239-9136</p>
-                    <p>674 Johnson Parkway<br>St. Paul, MN 55106</p>
-                </div>
-                <div>
-                    <h3>Programs</h3>
-                    <p>Kids Church<br>Start Here Ministry<br>Rooted Ministry<br>Show Up Ministry</p>
-                </div>
-                <div>
-                    <h3>Media</h3>
-                    <p>Videos</p>
-                </div>
-                <div>
-                    <h3>Other</h3>
-                    <p>Donate Now<br>Volunteer<br>Submit Prayer Request</p>
-                </div>
+    <!-- Our Values -->
+    <section class="values">
+        <h2>Our Values</h2>
+        <div class="values-cards">
+            <div class="card">
+                <img src="https://via.placeholder.com/320x200" alt="Worship">
+                <h3>Worship</h3>
+                <p>We believe in lifting our voices and hearts to God, celebrating His goodness and encountering His
+                    presence.</p>
             </div>
-            <p style="text-align:center; margin-top:30px;">&copy; 2025 Cornerstone Church</p>
-        </footer>
+            <div class="card">
+                <img src="https://via.placeholder.com/320x200" alt="JOY">
+                <h3>J.O.Y.</h3>
+                <p>Jesus, Others, You. Prioritizing Jesus above all and caring for others, empowering us to better
+                    serve our community.</p>
+            </div>
+            <div class="card">
+                <img src="https://via.placeholder.com/320x200" alt="Being Sent">
+                <h3>Being Sent</h3>
+                <p>Engaging with local and global communities, sharing hope and love through actions and words.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events">
+        <h2>Upcoming Events</h2>
+        <p>See all events</p>
+    </section>
+
+    <!-- Sermon -->
+    <section class="sermon">
+        <h2>Our Latest Service</h2>
+        <iframe width="100%" height="500" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="Sermon"></iframe>
+    </section>
+
+    <!-- CTA -->
+    <section class="cta">
+        <h2>Join a Life Group</h2>
+        <p>Our programs serve as the hub for small-group fellowship and discipleship.</p>
+        <a href="#" class="donate-btn">View All Programs</a>
+    </section>
+
+    <!-- Newsletter -->
+    <section class="newsletter">
+        <h2>Subscribe to our weekly newsletter</h2>
+        <input type="email" placeholder="Email Address">
+        <button>Sign Up</button>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-columns">
+            <div>
+                <h3>Contact</h3>
+                <p>Defenders MinistryInt'l@cllc.church<br>(952) 239-9136</p>
+                <p>674 Johnson Parkway<br>St. Paul, MN 55106</p>
+            </div>
+            <div>
+                <h3>Programs</h3>
+                <p>Kids Church<br>Start Here Ministry<br>Rooted Ministry<br>Show Up Ministry</p>
+            </div>
+            <div>
+                <h3>Media</h3>
+                <p>Videos</p>
+            </div>
+            <div>
+                <h3>Other</h3>
+                <p>Donate Now<br>Volunteer<br>Submit Prayer Request</p>
+            </div>
+        </div>
+        <p style="text-align:center; margin-top:30px;">&copy; 2025 Defenders MinistryInt'l Church</p>
+    </footer>
 
 </body>
 
