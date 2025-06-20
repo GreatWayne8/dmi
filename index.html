@@ -73,32 +73,34 @@
         }
 
         /* Hero */
-.hero {
-  position: relative;
-  background: url('images/hero-bg.jpg') no-repeat center center/cover;
-  padding: 160px 0; /* Adjust top and bottom padding for spacing */
-  color: white;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  width: 100%;
-}
+        .hero {
+            position: relative;
+            background: url('images/hero-bg.jpg') no-repeat center center/cover;
+            padding: 160px 0;
+            /* Adjust top and bottom padding for spacing */
+            color: rgb(255, 255, 255);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            width: 100%;
+        }
 
-.hero::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: rgba(1, 36, 134, 0.4); /* translucent overlay */
-  z-index: 0;
-}
+        .hero::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: rgba(0, 53, 197, 0.4);
+            /* translucent overlay */
+            z-index: 0;
+        }
 
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 1000px;
-  padding: 0 20px;
-}
+        .hero-content {
+            position: relative;
+            z-index: 1;
+            max-width: 1000px;
+            padding: 0 20px;
+        }
 
 
 
@@ -146,12 +148,13 @@
         }
 
         .service-time {
-            background: linear-gradient(90deg, var(--primary-purple), #c08ee2);
+            background: url("images/bg.jpg") no-repeat center center/cover;
             color: white;
             text-align: center;
             padding: 100px 20px;
             width: 100%;
         }
+
 
         .visit-us {
             display: flex;
@@ -170,6 +173,7 @@
             text-align: center;
             padding: 100px 20px;
             width: 100%;
+            
         }
 
         .values-cards {
@@ -266,8 +270,8 @@
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
             <a href="our-team.html">Our Team</a>
-            <a href="programs.html">Our Programs</a>
-            <a href="#">Events</a>
+            <a href="ourprograms.html">Our Programs</a>
+            <a href="events.html">Events</a>
             <a href="#">Visit Us</a>
         </div>
 
@@ -288,10 +292,12 @@
         <div class="section-container about">
             <div class="about-text">
                 <h2>We Are Defenders MinistryInt'l Church</h2>
-                <p>Welcome to Defenders MinistryInt'l Church, where we live intentionally to share His love and create lasting
+                <p>Welcome to Defenders MinistryInt'l Church, where we live intentionally to share His love and create
+                    lasting
                     memories that connect people to Christ.
                     We are a local church in St. Paul, Minnesota and we are on a mission to see God’s purpose in our
-                    lives. Come for an inspiring worship and hear God’s word and worship with Defenders MinistryInt'l’s Worship
+                    lives. Come for an inspiring worship and hear God’s word and worship with Defenders MinistryInt'l’s
+                    Worship
                     Team.</p>
             </div>
             <div class="about-video">
@@ -331,19 +337,19 @@
         <h2>Our Values</h2>
         <div class="values-cards">
             <div class="card">
-                <img src="https://via.placeholder.com/320x200" alt="Worship">
+                <img src="images/worship1.jpg" alt="Worship">
                 <h3>Worship</h3>
                 <p>We believe in lifting our voices and hearts to God, celebrating His goodness and encountering His
                     presence.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/320x200" alt="JOY">
+                <img src="images/church.jpg" alt="JOY">
                 <h3>J.O.Y.</h3>
                 <p>Jesus, Others, You. Prioritizing Jesus above all and caring for others, empowering us to better
                     serve our community.</p>
             </div>
             <div class="card">
-                <img src="https://via.placeholder.com/320x200" alt="Being Sent">
+                <img src="images/africanworshp.jpg" alt="Being Sent">
                 <h3>Being Sent</h3>
                 <p>Engaging with local and global communities, sharing hope and love through actions and words.</p>
             </div>
@@ -381,7 +387,7 @@
         <div class="footer-columns">
             <div>
                 <h3>Contact</h3>
-                <p>Defenders MinistryInt'l@cllc.church<br>(952) 239-9136</p>
+                <p>Defenders Ministry Int'l Ministry<br>(952) 239-9136</p>
                 <p>674 Johnson Parkway<br>St. Paul, MN 55106</p>
             </div>
             <div>
