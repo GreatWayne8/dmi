@@ -41,7 +41,7 @@
       width: 100%;
       z-index: 10;
       background: transparent;
-      color: white;
+      color: rgb(255, 253, 253);
       display: flex;
       justify-content: space-between;
       align-items: center;
@@ -63,11 +63,32 @@
       height: 50px;
     }
 
-    .nav-center a {
-      margin: 0 15px;
-      font-weight: 500;
-      color: white;
-    }
+   .nav-center a {
+  margin: 0 15px;
+  font-weight: 500;
+  color: var(--white);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-center a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  transition: width 0.3s ease;
+}
+
+.nav-center a:hover {
+  color: var(--primary-purple);
+}
+
+.nav-center a:hover::after {
+  width: 100%;
+}
 
     .donate-btn {
       background: var(--primary-purple);
@@ -159,9 +180,9 @@
       <a href="index.html">Home</a>
       <a href="about.html">About Us</a>
       <a href="our-team.html">Our Team</a>
-      <a href="ourourprograms.html">Our Programs</a>
+      <a href="ourprograms.html">Our Programs</a>
       <a href="events.html">Events</a>
-      <a href="#">Visit Us</a>
+            <a href="gallery.html">Gallery</a>
     </div>
     <a href="#" class="donate-btn">DONATE</a>
   </header>
@@ -178,7 +199,7 @@
     <div class="footer-columns">
       <div>
         <h3>Contact</h3>
-        <p>cornerstone@cllc.church<br>(952) 239-9136</p>
+        <p>cornerstone@cllc.church<br>(254) 239-9136</p>
         <p>674 Johnson Parkway<br>St. Paul, MN 55106</p>
       </div>
       <div>

@@ -9,105 +9,162 @@
   <link rel="icon" type="image/png" href="images/logo.png" />
   
   <style>
-    :root {
-      --primary-purple: #5e4b8b;
-      --black: #000;
-      --white: #fff;
-      --light-gray: #f8f8f8;
-      --dark-gray: #222;
-    }
+:root {
+  --primary-purple: #5e4b8b;
+  --black: #0f0f0f;
+  --white: #fff;
+  --light-gray: #f0f0f0;
+  --dark-gray: #1a1a1a;
+  --accent-gold: #e4c590;
+}
 
-    body {
-      margin: 0;
-      font-family: 'Poppins', sans-serif;
-      background-color: var(--black);
-      color: var(--white);
-      line-height: 1.6;
-    }
-    a { text-decoration: none; color: inherit; }
+body {
+  margin: 0;
+  font-family: 'Poppins', sans-serif;
+  background-color: var(--black);
+  color: var(--white);
+  line-height: 1.6;
+}
 
-    header {
-      background: var(--black);
-      color: var(--white);
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 50px;
-      flex-wrap: wrap;
-    }
-    .logo {
-      display: flex;
-      align-items: center;
-      gap: 15px;
-      font-weight: 700;
-      font-size: 1.2rem;
-      text-transform: uppercase;
-      line-height: 1.2;
-    }
-    .nav-center a {
-      margin: 0 15px;
-      font-weight: 500;
-      color: var(--white);
-    }
-    .donate-btn {
-      background: var(--primary-purple);
-      color: white;
-      padding: 10px 20px;
-      border-radius: 5px;
-      font-weight: 600;
-    }
+a {
+  text-decoration: none;
+  color: inherit;
+}
 
-    .team-container {
-      max-width: 1300px;
-      margin: auto;
-      padding: 80px 20px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 40px;
-    }
+header {
+  background: var(--black);
+  color: var(--white);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 50px;
+  flex-wrap: wrap;
+}
 
-    .team-card {
-      text-align: center;
-      padding: 20px;
-    }
-    .team-card img {
-      width: 250px;
-      height: 250px;
-      object-fit: cover;
-      border-radius: 50%;
-      border: 5px solid white;
-    }
-    .team-name {
-      margin-top: 20px;
-      font-size: 22px;
-      font-weight: 600;
-    }
-    .team-title {
-      margin: 10px 0;
-      text-transform: uppercase;
-      font-weight: 600;
-      font-size: 14px;
-    }
-    .team-bio {
-      text-align: left;
-      font-size: 15px;
-      color: #ccc;
-    }
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-weight: 700;
+  font-size: 1.2rem;
+  text-transform: uppercase;
+  line-height: 1.2;
+}
 
-    footer {
-      background: var(--black);
-      color: white;
-      padding: 60px 20px;
-      width: 100%;
-    }
-    .footer-columns {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 40px;
-      justify-content: space-between;
-      max-width: 1200px;
-      margin: auto;
-    }
+.nav-center a {
+  margin: 0 15px;
+  font-weight: 500;
+  color: var(--white);
+  position: relative;
+  transition: color 0.3s ease;
+}
+
+.nav-center a::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  width: 0%;
+  height: 2px;
+  background-color: var(--primary-purple);
+  transition: width 0.3s ease;
+}
+
+.nav-center a:hover {
+  color: var(--primary-purple);
+}
+.nav-center a:hover::after {
+  width: 100%;
+}
+
+.donate-btn {
+  background: var(--primary-purple);
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+.donate-btn:hover {
+  background: var(--accent-gold);
+  color: var(--black);
+}
+
+/* TEAM STYLING */
+.team-container {
+  max-width: 1400px;
+  margin: auto;
+  padding: 80px 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 50px;
+}
+
+.team-card {
+  background-color: var(--dark-gray);
+  border-radius: 12px;
+  padding: 30px 20px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.4);
+}
+.team-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 25px rgba(0,0,0,0.5);
+}
+.team-card img {
+  width: 160px;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 4px solid var(--accent-gold);
+  margin-bottom: 20px;
+}
+.team-name {
+  margin-top: 5px;
+  font-size: 20px;
+  font-weight: 700;
+}
+.team-title {
+  margin: 8px 0;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--accent-gold);
+  letter-spacing: 0.5px;
+}
+.team-bio {
+  text-align: center;
+  font-size: 15px;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+/* FOOTER */
+footer {
+  background: var(--dark-gray);
+  color: white;
+  padding: 60px 30px;
+  width: 100%;
+}
+.footer-columns {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer-columns h3 {
+  margin-bottom: 10px;
+  font-size: 18px;
+  color: var(--accent-gold);
+}
+footer p {
+  font-size: 14px;
+  line-height: 1.6;
+}
+
   </style>
 </head>
 
@@ -125,7 +182,7 @@
     <a href="our-team.html">Our Team</a>
     <a href="ourprograms.html">Our Programs</a>
     <a href="events.html">Events</a>
-    <a href="#">Visit Us</a>
+            <a href="gallery.html">Gallery</a>
   </div>
 
   <a href="#" class="donate-btn">DONATE</a>
@@ -133,59 +190,61 @@
 
 <div class="team-container">
 
-  <div class="team-card">
-    <img src="images/pastor1.jpg" alt="Team Member 1">
-    <div class="team-name">Apostle Ben Achebe </div>
-    <div class="team-title">LEAD PASTOR</div>
-    <div class="team-bio">
-      <p>Ben Achebe holds a Master of Divinity from ## Seminary and has been passionately leading Defenders Ministry for over 10 years. He is dedicated to raising bold disciples and impacting nations through the gospel.</p>
-    </div>
+ <div class="team-card">
+  <img src="images/pastor1.jpg" alt="Team Member 1">
+  <div class="team-name">Apostle Ben Achebe</div>
+  <div class="team-title">Lead Pastor & Visionary</div>
+  <div class="team-bio">
+    <p>Apostle Ben Achebe is the founder and visionary leader of Defenders Ministry International. With a Master of Divinity from -----, he has served in full-time ministry for over a decade. His calling is to raise a generation of bold, Spirit-empowered disciples and to advance the Kingdom of God across nations. Known for his dynamic preaching, apostolic insight, and passion for revival, he continues to equip leaders and ignite purpose in the Body of Christ.</p>
   </div>
+</div>
 
-  <div class="team-card">
-    <img src="images/pastor2.jpg" alt="Team Member 2">
-    <div class="team-name">Pastor Winnie Achebe</div>
-    <div class="team-title"> PASTOR</div>
-    <div class="team-bio">
-      <p>Wiinie leads Bible Studies and Discipleship Training, equipping believers for ministry. She loves mentoring young women and organizing community outreach programs.</p>
-    </div>
-  </div>
 
-  <div class="team-card">
-    <img src="images/pastor3.jpg" alt="Team Member 3">
-    <div class="team-name">James Brown</div>
-    <div class="team-title">WORSHIP DIRECTOR</div>
-    <div class="team-bio">
-      <p>James is a gifted musician who leads powerful worship experiences, drawing people closer to God through music. He oversees worship team training and music ministry development.</p>
-    </div>
+ <div class="team-card">
+  <img src="images/WhatsApp Image 2025-06-24 at 21.49.38.jpeg" alt="Team Member 2">
+  <div class="team-name">Pastor Winnie Achebe</div>
+  <div class="team-title">Pastor</div>
+  <div class="team-bio">
+    <p>Pastor Winnie Achebe serves faithfully alongside her husband, Apostle Achebe, as the co-laborer in ministry. She leads Bible studies, discipleship classes, and women’s empowerment programs. With a heart for mentoring and a passion for spiritual growth, she nurtures both individuals and families in the Word and love of God.</p>
   </div>
+</div>
 
-  <div class="team-card">
-    <img src="images/pastor4.jpg" alt="Team Member 4">
-    <div class="team-name">Sarah Johnson</div>
-    <div class="team-title">CHILDREN MINISTRY DIRECTOR</div>
-    <div class="team-bio">
-      <p>Sarah oversees children's ministry, curriculum planning, and volunteers. Her passion is helping children grow in faith and understand the Word of God from a young age.</p>
-    </div>
-  </div>
 
-  <div class="team-card">
-    <img src="images/pastor5.jpg" alt="Team Member 5">
-    <div class="team-name">David Lee</div>
-    <div class="team-title">MEDIA DIRECTOR</div>
-    <div class="team-bio">
-      <p>David manages media production, livestream services, and digital outreach. His creativity helps extend the ministry's reach across multiple platforms.</p>
-    </div>
+ <div class="team-card">
+  <img src="https://images.unsplash.com/photo-1672684876920-bfd63e435f6e?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MzF8fG1hbiUyMGxlYWRlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Team Member 3">
+  <div class="team-name">Karisa Eric</div>
+  <div class="team-title">MOP (Men of Purpose)</div>
+  <div class="team-bio">
+    <p>Karisa Eric leads the Men of Purpose (MOP) ministry, empowering men to walk boldly in their faith, lead with integrity, and impact their families and communities. He mentors men in spiritual growth, accountability, and kingdom leadership.</p>
   </div>
+</div>
 
-  <div class="team-card">
-    <img src="images/pastor6.jpg" alt="Team Member 6">
-    <div class="team-name">Rachel Kim</div>
-    <div class="team-title">MISSIONS COORDINATOR</div>
-    <div class="team-bio">
-      <p>Rachel coordinates local and international mission trips, mobilizing teams to bring hope and support to communities worldwide, fulfilling the Great Commission.</p>
-    </div>
+<div class="team-card">
+  <img src="https://plus.unsplash.com/premium_photo-1707155465391-5cfc46746a34?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8YmxhY2slMjB3b21hbiUyMGxlYWRlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Team Member 4">
+  <div class="team-name">Loice Mukami</div>
+  <div class="team-title">Follow Ups</div>
+  <div class="team-bio">
+    <p>Loice ensures that every new believer and visitor feels connected and cared for. She oversees follow-up ministries, coordinates calls and visits, and supports people in their spiritual journey beyond the altar call.</p>
   </div>
+</div>
+
+<div class="team-card">
+  <img src="https://images.unsplash.com/photo-1551727974-8af20a3322f1?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmxhY2slMjB3b21hbiUyMGxlYWRlcnxlbnwwfHwwfHx8MA%3D%3D" alt="Team Member 5">
+  <div class="team-name">Caren Chemutai</div>
+  <div class="team-title">Projects & Development</div>
+  <div class="team-bio">
+    <p>Caren spearheads ministry infrastructure, outreach programs, and expansion projects. Her focus is to turn vision into action—planning, organizing, and executing developments that advance the mission of DMI on a structural and societal level.</p>
+  </div>
+</div>
+
+<div class="team-card">
+  <img src="https://images.unsplash.com/photo-1655402428298-fe9b5fb757df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJsYWNrJTIwd29tYW4lMjBsZWFkZXJ8ZW58MHx8MHx8fDA%3D" alt="Team Member 6">
+  <div class="team-name">Sylvia Rono</div>
+  <div class="team-title">Chaplaincy</div>
+  <div class="team-bio">
+    <p>Sylvia provides pastoral care, counseling, and spiritual support to individuals in hospitals, schools, and other institutions. As a chaplain, she brings the presence of Christ into places of need, offering hope, prayer, and healing.</p>
+  </div>
+</div>
 
 </div>
 
@@ -194,7 +253,7 @@
   <div class="footer-columns">
     <div>
       <h3>Contact</h3>
-      <p>info@defendersministry.org<br>(+123) 456 789 000</p>
+      <p>info@defendersministry.org<br>(+254) 456 789 000</p>
       <p>123 Mutaratara mall <br>Nairobi, Kenya</p>
     </div>
     <div>
